@@ -554,9 +554,11 @@ document.write(`
 <h1>Book about XGBoost<a class="headerlink" href="#book-about-xgboost" title="Permalink to this heading">#</a></h1>
 <p><a href="https://drive.google.com/file/d/1Lf8lbV5OiFa-EiJWToSIyjHOx9oBe0Hg/view?usp=sharing"> Read here </a>
 <br></p>
-<div>
+<!-- <div>
   <img style="width: 100%" src="assets/img_1.png" />
-</div>
+</div> -->
+<!-- ![](assets/img_1.png) -->
+<a class="reference internal image-reference" href="../_images/img_1.png"><img alt="Description of the image" src="../_images/img_1.png" style="width: 300px; height: 400px;" /></a>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
@@ -612,9 +614,12 @@ The regularization term \(\Omega(f_k)\) typically consists of two parts:
 <section id="description-of-the-algorithm">
 <h2>Description of the algorithm<a class="headerlink" href="#description-of-the-algorithm" title="Permalink to this heading">#</a></h2>
 <br>
-<div>
+<!-- <div>
   <img style="width: 100%" src="assets/img_2.png" />
-</div>
+</div> -->
+<!-- <img src="assets/img_2.png" alt="Description of the image" width="400" height="200"> -->
+<img alt="../_images/img_2.png" src="../_images/img_2.png" />
+<!-- ![Description of the image](assets/img_2.png){: style="display: block; margin: 0 auto; width: 200px; height: 200px;"} -->
 <p>XGBoost is based on the gradient boosting algorithm for decision trees. Gradient boosting is a machine learning technique for classification and regression problems that builds a prediction model in the form of an ensemble of weak predictive models, usually decision trees. Ensemble training is carried out sequentially, in contrast to, for example, bagging. At each iteration, the deviations of the predictions of the already trained ensemble on the training set are calculated. The next model that will be added to the ensemble will predict these deviations. Thus, by adding the predictions of the new tree to the predictions of the trained ensemble, we can reduce the average deviation of the model, which is the target of the optimization problem. New trees are added to the ensemble until the error decreases or until one of the “early stopping” rules is satisfied.</p>
 <p>Consider an illustration of boosting. It examines the behavior of the model at one point of an abstract linear regression problem. Let us assume that the first model of the ensemble F always produces the sample mean of the predicted value f0. This prediction is quite rough, so the standard deviation at our chosen point will be quite large. We will try to fix this by training a model Δ1, which will “correct” the prediction of the previous ensemble F0. Thus, we obtain ensemble F1, the prediction of which will be summed up from the predictions of the f0 and Δ1 models. Continuing this sequence, we arrive at the ensemble F4, the prediction of which is summed up from the predictions f0, Δ1, Δ2, Δ3, Δ4 and predicts exactly the value of the given target.</p>
 </section>
@@ -641,9 +646,8 @@ The regularization term \(\Omega(f_k)\) typically consists of two parts:
 <li><p>A customized objective function in machine learning serves the purpose of either maximizing or minimizing a specific criterion. In the context of machine learning, the goal is typically to minimize the objective function, which is a composite of the loss function and a regularization term. The objective function encapsulates the measure of how well the model performs, incorporating both the accuracy in predicting outcomes (loss function) and any regularization constraints imposed to prevent overfitting or enhance generalization. Customization of the objective function allows practitioners to tailor the optimization process according to the specific goals and characteristics of their machine learning task.</p></li>
 </ol>
 <br>
-<div style="text-align: center;">
-  <img style="width: 100%" src="assets/img_4.png" />
-</div>
+<!-- <img style="width: 100%" src="assets/img_4.png" /> -->
+<p><img alt="" src="../_images/img_4.png" /></p>
 <ul class="simple">
 <li><p>Optimizing the loss function encourages predictive models whereas optimizing regularization leads to smaller variance and makes prediction stable. Different objective functions available in XGBoost are:</p>
 <ul>
@@ -665,9 +669,11 @@ The regularization term \(\Omega(f_k)\) typically consists of two parts:
 <section id="cross-validation">
 <h2>Cross-validation<a class="headerlink" href="#cross-validation" title="Permalink to this heading">#</a></h2>
 <br>
-<div style="text-align: center;">
+<!-- <div style="text-align: center;">
   <img style="width: 100%" src="assets/img_3.png" />
-</div>
+</div> -->
+<!-- <img style="width: 50%" src="assets/img_3.png" /> -->
+<p><img alt="" src="../_images/img_3.png" /></p>
 <ol class="arabic simple">
 <li><p>Built-in Cross-validation - s a statistical approach for evaluating models on unfamiliar data, especially beneficial when dealing with limited datasets. It avoids the conventional practice of setting aside an independent sample for validation to prevent overfitting. The challenge arises when reducing the training data size for validation compromises the model’s ability to grasp intricate features and patterns within the data, potentially leading to errors. This is akin to the functionality offered by scikit-learn’s cross_val_score, which facilitates a robust assessment of a model’s generalization performance by systematically dividing the data into subsets for training and evaluation, ensuring a more reliable estimate of performance on unseen data.</p></li>
 </ol>
